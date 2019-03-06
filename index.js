@@ -39,7 +39,7 @@ async function main(maxBreaches = 20) {
       `${idx + 1}. ${stats.dataClass.padEnd(
         30,
         " "
-      )} ${stats.pwnCount.toLocaleString().padStart(15, " ")} (${
+      )} ${stats.pwnCount.toLocaleString().padStart(16, " ")} (${
         stats.breachCount
       } of ${breaches.length} -- ${stats.breachPct.toFixed(1)}%)`
     );
