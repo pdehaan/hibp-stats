@@ -1,0 +1,27 @@
+{
+  "name": "hibp-stats",
+  "description": "Fetch breach stats for Have I Been Pwned",
+  "version": "1.0.0",
+  "author": "Peter deHaan <peter@deseloper.com> (https://about.me/peterdehaan)",
+  "bin": {
+    "hibp-stats": "index.js"
+  },
+  "bugs": {
+    "url": "https://github.com/pdehaan/hibp-stats/issues"
+  },
+  "dependencies": {
+    "axios": "0.18.0"
+  },
+  "devDependencies": {},
+  "homepage": "https://github.com/pdehaan/hibp-stats#readme",
+  "keywords": [],
+  "license": "MPL-2.0",
+  "main": "lib.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pdehaan/hibp-stats.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
