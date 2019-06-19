@@ -1,8 +1,8 @@
 const axios = require("axios");
 
 async function getBreaches() {
-  const { data } = await axios.get("https://monitor.firefox.com/hibp/breaches");
-  return data;
+  const res = await axios.get("https://haveibeenpwned.com/api/v2/breaches", {headers: {"User-Agent": "hibp-stats/1.0.0"}});
+  return res.data;
 }
 
 exports.getBreaches = getBreaches;

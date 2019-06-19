@@ -34,16 +34,17 @@ async function main(maxBreaches = 20) {
     })
     .sort((itemA, itemB) => itemB.pwnCount - itemA.pwnCount);
 
-  res.slice(0, maxBreaches).forEach((stats, idx) => {
-    console.log(
-      `${idx + 1}. ${stats.dataClass.padEnd(
-        30,
-        " "
-      )} ${stats.pwnCount.toLocaleString().padStart(16, " ")} (${
-        stats.breachCount
-      } of ${breaches.length} -- ${stats.breachPct.toFixed(1)}%)`
-    );
-  });
+  res.slice(0, maxBreaches)
+    .forEach((stats, idx) => {
+      console.log(
+        `${String(idx + 1).padStart(String(maxBreaches).length, " ")}. ${stats.dataClass.padEnd(
+          30,
+          " "
+        )} ${stats.pwnCount.toLocaleString().padStart(16, " ")} (${
+          stats.breachCount
+        } of ${breaches.length} -- ${stats.breachPct.toFixed(1)}%)`
+      );
+    });
 }
 
 function sum(acc, value) {
