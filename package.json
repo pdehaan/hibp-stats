@@ -10,7 +10,7 @@
     "url": "https://github.com/pdehaan/hibp-stats/issues"
   },
   "dependencies": {
-    "axios": "^0.21.1"
+    "axios": "^0.21.2"
   },
   "devDependencies": {},
   "homepage": "https://github.com/pdehaan/hibp-stats#readme",
